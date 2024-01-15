@@ -353,6 +353,7 @@ class Nanowire:
     def wavefunction(self,x,y):
         '''
         Get the wave functions at `x` that has an energy closest to `y` 
+        what's the meaning of 'x' and 'y'
         
         Parameters
         ----------
@@ -364,7 +365,10 @@ class Nanowire:
         Returns
         -------
         dict 
-            The dictionary for `val_p` (eigenvalues that is closest to `y`), `wf_p` (wave function in the BdG basis), `wf_1` and `wf_2 ` (wave functions in the Majorana basis), and `ansatz` (the initial starting point in y-axis).
+            The dictionary for `val_p` (eigenvalues that is closest to `y`), 
+            `wf_p` (wave function in the BdG basis), 
+            `wf_1` and `wf_2 ` (wave functions in the Majorana basis), 
+            and `ansatz` (the initial starting point in y-axis).
         '''
         setattr(self.args, self.args.x,x)
         setattr(self.args, self.args.y,y)
@@ -383,7 +387,8 @@ class Nanowire:
 
     def ED(self,x,y):
         '''
-        Get the eigenvalues from exact diagonlization.  Y should be `V_bias`, which is however ignored because the Hamiltonian does not depend on `V_bias`.
+        Get the eigenvalues from exact diagonlization.  Y should be `V_bias`, 
+        which is however ignored because the Hamiltonian does not depend on `V_bias`.
         
         Parameters
         ----------
