@@ -358,9 +358,9 @@ class Nanowire:
         Parameters
         ----------
         x : float
-            Value of x-axis.
+            Value of x-axis (i.e., Zeeman field?).
         y : float
-            Value of y-axis (i.e., `V_bias` here).
+            Value of y-axis (i.e., `V_bias` here, or 'Energy').
         
         Returns
         -------
